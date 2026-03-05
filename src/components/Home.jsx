@@ -13,7 +13,7 @@ const HEADING_ROWS = [{
 },
 {
   "title":"Contacts",
-  "link":"/Contacts"
+  "link":"/Contact"
 }];
 const REPEAT_COUNT = 8;
 
