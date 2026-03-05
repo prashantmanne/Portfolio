@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: "Arial Black", "Helvetica Neue", sans-serif;
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Grain texture overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.24;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+.home__content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(0.7rem, 1vw, 1.5rem);
+  padding: clamp(0.5rem, 2vw, 1.6rem) 0;
+}
+
+.carousel-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(110px, 14vw, 250px);
+  overflow: hidden;
+}
+
+.carousel-heading::after {
+  content: "";
+  position: absolute;
+  top: 10;
+  right: clamp(1rem, 3vw, 3rem);
+  width: clamp(62px, 7vw, 120px);
+  aspect-ratio: 1 / 1;
+  background: url("https://i.pinimg.com/originals/80/7b/5c/807b5c4b02e765bb4930b7c66662ef4b.gif") center / contain no-repeat;
+  transform: translateY(-35%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.15s linear;
+}
+
+.carousel-heading__outline {
+  margin: 0;
+  width: 100%;
+  padding-inline: clamp(1.1rem, 5vw, 7rem);
+  white-space: nowrap;
+  color: transparent;
+  font-size: clamp(72px, 13vw, 220px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  font-style: italic;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.92);
+  transition: opacity 0.6s linear;
+}
+
+.carousel-heading__marquee {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s linear;
+}
+
+.carousel-heading__track {
+  display: flex;
+  width: max-content;
+  animation: heading-marquee 14s linear infinite;
+}
+
+.carousel-heading__group {
+  display: flex;
+  flex-shrink: 0;
+  gap: clamp(0.8rem, 1vw, 1.1rem);
+}
+
+.carousel-heading__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: clamp(260px, 56vw, 1050px);
+  height: clamp(110px, 14vw, 250px);
+  padding-inline: clamp(1.4rem, 4vw, 3.6rem);
+  background: #ef000f;
+  color: #fff;
+  white-space: nowrap;
+  font-size: clamp(72px, 13vw, 220px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  font-style: italic;
+}
+
+.carousel-heading:hover .carousel-heading__outline,
+.carousel-heading:focus-visible .carousel-heading__outline {
+  opacity: 0;
+}
+
+.carousel-heading:hover .carousel-heading__marquee,
+.carousel-heading:focus-visible .carousel-heading__marquee {
+  opacity: 1;
+}
+
+.carousel-heading:hover::after,
+.carousel-heading:focus-visible::after {
+  opacity: 1;
+}
+
+.carousel-heading:focus-visible {
+  outline: none;
+}
+
+@keyframes heading-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.bgIm{
+   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+.knight{
+  display: none;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+  .knight{
+    display: block;
+  }
+  .home__content{
+    justify-content: flex-start;
+    padding: 40px 24px;
+    gap: 24px;
+  }
+
+  .carousel-heading{
+    min-height: auto;
+  }
+
+  /* show only outline text */
+  .carousel-heading__outline{
+    opacity: 1 !important;
+    font-size: clamp(40px, 10vw, 70px);
+    padding-inline: 0;
+  }
+
+  /* hide marquee */
+  .carousel-heading__marquee{
+    display: none;
+  }
+
+  /* hide hover gif */
+  .carousel-heading::after{
+    display:none;
+  }
+
+}
