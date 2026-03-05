@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaLinkedin,
@@ -14,11 +15,11 @@ export default function Contact() {
       <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
 
       {/* Back Button */}
-     <Link to={'/'}>
-          <button className="absolute top-6 left-6 text-2xl border border-white rounded-full p-2 hover:bg-white hover:text-black transition">
-                <FaArrowLeft />
-         </button>
-         </Link>
+      <Link to="/">
+        <button className="absolute top-6 left-6 text-2xl border border-white rounded-full p-2 hover:bg-white hover:text-black transition">
+          <FaArrowLeft />
+        </button>
+      </Link>
 
       {/* Social Icons */}
       <div className="flex gap-12 text-4xl z-10">
@@ -26,21 +27,23 @@ export default function Contact() {
         <a
           href="https://github.com/prashantmanne"
           target="_blank"
+          rel="noopener noreferrer"
           className="hover:scale-125 transition"
         >
           <FaGithub />
         </a>
 
         <a
-          href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.145595942605_crid.651893406697_kw.www%20linkedin%20com_d.c_tid.kwd-2246447642_n.g_mt.e_geo.9062210"
+          href="https://www.linkedin.com/in/prashantmanne"
           target="_blank"
+          rel="noopener noreferrer"
           className="hover:scale-125 text-orange-400 transition"
         >
           <FaLinkedin />
         </a>
 
         <a
-          href="prashantmanne16@gmail.com"
+          href="mailto:prashantmanne16@gmail.com"
           className="hover:scale-125 text-cyan-400 transition"
         >
           <FaGoogle />
@@ -48,14 +51,14 @@ export default function Contact() {
 
         <a
           href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:scale-125 p-2 rounded-lg transition"
         >
           <FaInstagram />
         </a>
 
       </div>
-
-   
 
     </div>
   );
