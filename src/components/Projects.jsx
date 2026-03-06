@@ -82,7 +82,7 @@ return (
 
 {/* Back button */}
 <div className="mb-16">
-  <Link>
+  <Link to={'/'}>
 <button className="border border-gray-500 rounded-full p-3 hover:border-[#00d1c7] transition">
 <GoArrowLeft size={20}/>
 </button>

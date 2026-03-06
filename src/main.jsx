@@ -8,8 +8,9 @@ import ScrolltoTop from './components/ScrolltoTop'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+     <Stairs>
     <ScrolltoTop/>
-    <Stairs>
+   
       <App />
       </Stairs>
     </BrowserRouter>
