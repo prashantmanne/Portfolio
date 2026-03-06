@@ -26,8 +26,8 @@ export default function About() {
               ABOUT
             </span>
           </div>
-        <div className="w-full h-[900px] ">
-            <img src="public/ppprofile.jpeg" className="w-full h-[900px]" alt="profile pic" />
+        <div className="w-full h-[500px] flex items-center justify-center">
+            <img src="https://cdn.pixabay.com/animation/2022/08/06/11/56/11-56-56-209_512.gif" className="w-[500px] h-[500px]" alt="profile pic" />
         </div>
           
 
