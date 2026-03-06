@@ -29,7 +29,7 @@ export default function Home() {
         ))}
 
            <img
-       src="https://i.pinimg.com/originals/e6/10/9e/e6109e32a9ac1a8f2496d7fba78e9c84.gif"
+       src="https://cdn.pixabay.com/animation/2024/04/14/02/43/02-43-38-360_512.gif"
         className="knight"
         alt="knight"
       /> 
