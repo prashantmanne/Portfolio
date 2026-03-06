@@ -73,7 +73,7 @@ live: "#",
 ];
 
 return (
-<div className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
+<div className="relative min-h-screen bgIm text-white overflow-hidden">
 
 {/* Grain overlay */}
 <div className="absolute inset-0 pointer-events-none opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
@@ -83,7 +83,7 @@ return (
 {/* Back button */}
 <div className="mb-16">
   <Link to={'/'}>
-<button className="border border-gray-500 rounded-full p-3 hover:border-[#00d1c7] transition">
+<button className="border border-gray-500 rounded-full p-3 hover:black transition">
 <GoArrowLeft size={20}/>
 </button>
 </Link>
@@ -103,7 +103,7 @@ PROJECTS
 
 <div
 key={project.id}
-className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-[#00d1c7] transition-all duration-300 hover:-translate-y-2"
+className="bg-gray-800 p-6 rounded-2xl border border-neutral-800 hover:border-[#00d1c7] transition-all duration-300 hover:-translate-y-2"
 >
 
 <h2 className="text-2xl font-bold mb-3">

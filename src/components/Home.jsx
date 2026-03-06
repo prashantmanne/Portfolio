@@ -19,9 +19,9 @@ const REPEAT_COUNT = 8;
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="home bgIm">
       <div className="grain" aria-hidden="true" />
-      <section className="home__content">
+      <section className="home__content gap-4 sm:gap-2 md:gap-0 lg:gap-0">
         {HEADING_ROWS.map((title) => (
           <Link to={title.link}>
           <CarouselHeading key={title.title} text={title.title} />
@@ -34,7 +34,7 @@ export default function Home() {
         alt="knight"
         
       /> 
-<h6 className="text-transparent text-center text-[10px] font-bold [-webkit-text-stroke:1px_white]">
+<h6 className="text-transparent text-center text-[10px] pt-10 font-bold [-webkit-text-stroke:1px_white]">
   Code & Design by Prashant Manne
 </h6>
       </section>

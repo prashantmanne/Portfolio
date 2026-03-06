@@ -9,7 +9,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative min-h-screen bg-[#0d0d0d] flex items-center justify-center text-white">
+    <div className="relative min-h-screen bgIm flex items-center justify-center text-white">
 
       {/* Grain Background */}
       <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
