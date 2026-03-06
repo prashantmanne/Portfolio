@@ -47,7 +47,7 @@ export default function Stairs({ children }) {
 
       tl.from(pageRef.current,{
         opacity:0,
-        duration:0.6
+        duration:0.3
       })
 
     })
