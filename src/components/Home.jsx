@@ -30,8 +30,9 @@ export default function Home() {
 
            <img
        src="https://cdn.pixabay.com/animation/2024/04/14/02/43/02-43-38-360_512.gif"
-        className="knight"
+        className="knight pt-20"
         alt="knight"
+        
       /> 
 <h6 className="text-transparent text-center text-[10px] font-bold [-webkit-text-stroke:1px_white]">
   Code & Design by Prashant Manne
