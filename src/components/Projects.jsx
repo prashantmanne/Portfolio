@@ -3,6 +3,7 @@ import { GoArrowLeft } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import js from "@eslint/js";
 
 export default function Projects() {
 
@@ -13,7 +14,7 @@ title: "Puneri Paltan Website",
 description: "Kabaddi team website with player information and team details.",
 tech: ["React", "Node.js", "MongoDB"],
 github: "https://github.com/prashantmanne/Puneri-Paltan",
-live: "#",
+live: "unique-banoffee-97fb72.netlify.app",
 },
 
 {
@@ -38,16 +39,16 @@ live: "#",
 id: 4,
 title: "Quiz Web App",
 description: "Interactive quiz application with scoring and result display.",
-tech: ["HTML", "CSS", "JavaScript"],
+tech: ["Next js"],
 github: "https://github.com/prashantmanne/Quiz-web-app",
-live: "#",
+live: "superb-jalebi-12e3cd.netlify.app",
 },
 
 {
 id: 5,
 title: "Todo List",
 description: "Task manager to add, complete and delete daily tasks.",
-tech: ["React", "LocalStorage"],
+tech: ["React", "Node Js"],
 github: "https://github.com/prashantmanne/TODO-LIST",
 live: "#",
 },
@@ -55,21 +56,28 @@ live: "#",
 {
 id: 6,
 title: "Grocery Store Management",
-description: "Java based console system to manage grocery inventory.",
-tech: ["Java", "MySQL"],
+description: "Python based console system to manage grocery inventory.",
+tech: ["Python", "Sqlite","flask"],
 github: "https://github.com/prashantmanne/GROCERY_STORE_MANAGEMENT_SYSTEM",
 live: "#",
 },
 
 {
 id: 7,
-title: "",
+title: "Onovo replica",
 description: "Collection of UI layouts and components built with HTML and CSS.",
 tech: ["HTML", "CSS","js"],
 github: "https://github.com/prashantmanne/HTML-CSS-Practice",
-live: "#",
-}
-
+live: "velvety-sfogliatella-76140d.netlify.app",
+},
+{
+id: 8,
+title: "REPLICA OF K72",
+description: "Collection of UI layouts and components built with HTML and CSS.",
+tech: ["React","Gsap"],
+github: "https://github.com/prashantmanne/k`72-main",
+live: "velvety-sfogliatella-76140d.netlify.app",
+},
 ];
 
 return (
